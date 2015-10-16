@@ -1,0 +1,48 @@
+<!--自动播放的图片库-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+             >
+<ViewFlipper
+    android:id="@+id/details"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:flipInterval="1000"
+    >
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/t"
+    />
+<ImageView
+    android:src="@drawable/z"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+ <ImageView
+     android:src="@drawable/p"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"/>
+</ViewFlipper>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="prev"
+        android:text="&lt;"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="自动播放"
+        android:onClick="auto"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<Button
+    android:onClick="next"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:text="&gt;"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
